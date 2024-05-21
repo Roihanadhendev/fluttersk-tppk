@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "793644197915",
+    "project_id": "sktppkdinas",
+    "storage_bucket": "sktppkdinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793644197915:android:2fc12f0dde34007486f0be",
+        "android_client_info": {
+          "package_name": "com.example.kp_tppk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpFkT6fjAv3EMm3F1JFkyVBaXDhN3Kdro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

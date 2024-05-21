@@ -1,0 +1,34 @@
+Test User if use authenticated
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+// Assuming you have implemented user authentication in your app
+
+Future<void> fetchData() async {
+  final user = FirebaseAuth.instance.currentUser; // Get current user
+
+  if (user != null) { // Check if user is signed in
+    try {
+      // Build Firestore query (replace 'data-dummy' with your collection)
+      final querySnapshot = await FirebaseFirestore.instance
+          .collection('data-dummy')
+          .orderBy('__name')
+          .limitToFirst(1) // Adjust limit as needed
+          .get();
+
+      // Process retrieved data
+      for (var doc in querySnapshot.docs) {
+        // Access document data here
+        print(doc.id);
+        print(doc.data());
+      }
+    } on FirebaseException catch (e) {
+      // Handle Firestore exceptions (e.g., permission errors)
+      print("Error fetching data: $e");
+    }
+  } else {
+    // Handle the case where no user is signed in
+    print("User not signed in");
+  }
+}
+
