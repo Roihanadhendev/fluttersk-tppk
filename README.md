@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # kp_tppk
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# fluttersk-tppk
+>>>>>>> 58340655822a353c4bf44d226e776d5e67064afd
